@@ -15,7 +15,7 @@ public:
   void display(sf::RenderWindow &win, unsigned int index);
 };
 void game() {
-  sf::RenderWindow Window(sf::VideoMode(1000, 800), "Algorithm Visualizer");
+  sf::RenderWindow Window(sf::VideoMode(1000, 800), "Algorithm Visualizer", sf::Style::Titlebar | sf::Style::Close );
   sf::Clock r;
   line Line = line();
   Line.reshuffle(100);
